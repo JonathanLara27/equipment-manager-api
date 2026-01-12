@@ -126,19 +126,3 @@ src/
 │   └── ...
 ├── app.module.ts       # Configuración principal y conexión BD
 └── main.ts             # Entry point y configuración Swagger/Pipes
-
-```
-
-```
-
-***
-
-### Tips Pro para este README:
-
-1.  **Claridad:** He separado la instalación de dependencias de la base de datos, ya que el Docker Compose lo tienes afuera.
-2.  **Swagger:** He resaltado el link a la documentación, ya que es la forma más fácil para que el revisor pruebe tu trabajo sin configurar Postman.
-3.  **Ejemplos:** Puse un JSON de ejemplo para el endpoint principal, ahorrándole tiempo al revisor.
-
-Con esto, el backend está **listo para entregar**. ¿Hacemos el commit final de este README y pasamos a Angular?
-
-```
