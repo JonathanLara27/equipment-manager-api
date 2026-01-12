@@ -1,8 +1,7 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { EquipmentModule } from './equipment/equipment.module';
 
 @Module({
   imports: [
@@ -20,8 +19,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       autoLoadEntities: true, // Carga automática de entidades
       synchronize: process.env.SYNCRONIZE_DB === 'true',      // ¡SOLO PARA DEV! Crea las tablas automáticamente
     }),
+
+    EquipmentModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
